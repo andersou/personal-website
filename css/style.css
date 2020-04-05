@@ -1,0 +1,12 @@
+.foto-ander {
+    width: 200px;
+}
+.links-rodape {
+    font-size: 1.5rem;
+}
+.links-rodape i {
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: #b49b57;
+    color: white;
+}
