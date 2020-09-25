@@ -113,3 +113,6 @@ dd li {
 p {
     margin-bottom: 00.5rem;
 }
+html {
+    font-size: 1rem !important;
+}
