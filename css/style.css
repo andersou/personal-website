@@ -94,6 +94,8 @@ ul.lista-ander li::after {
 }
 .desc {
     font-style: italic;
+    text-align: justify;
+    display: block;
 }
 dl {
     display: grid;
@@ -123,5 +125,10 @@ p {
     margin-bottom: 00.5rem;
 }
 html {
-    font-size: 1rem !important;
+    font-size: 0.99rem !important;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
 }
