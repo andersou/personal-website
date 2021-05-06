@@ -1,134 +1,134 @@
 .foto-ander {
-    width: 200px;
+  width: 200px;
 
-    border: 5px solid #b49b57;
-    /* margin: auto; */
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+  border: 5px solid #b49b57;
+  /* margin: auto; */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .links-rodape {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 .links-rodape i {
-    padding: 1rem;
-    border-radius: 50%;
-    background-color: #b49b57;
-    color: white;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: #b49b57;
+  color: white;
 }
 
 .links-rodape li {
-    margin: 0.1rem;
-    display: flex;
+  margin: 0.1rem;
+  display: flex;
 }
 .links-rodape a {
-    z-index: 1;
+  z-index: 1;
 }
 .links-rodape p {
-    background-color: #c0c0c0;
-    color: white;
-    margin: auto -10px;
-    padding: 0 15px;
-    z-index: 0;
-    border-bottom-right-radius: 1rem;
-    border-top-right-radius: 0.3rem;
+  background-color: #c0c0c0;
+  color: white;
+  margin: auto -10px;
+  padding: 0 15px;
+  z-index: 0;
+  border-bottom-right-radius: 1rem;
+  border-top-right-radius: 0.3rem;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
-    grid-template-rows: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: auto;
 }
 
 .coluna-foto {
-    grid-column: 1/3;
+  grid-column: 1/3;
 }
 .coluna-conteudo {
-    grid-column: 3/6;
+  grid-column: 3/6;
 }
 
 h4 {
-    font-weight: 100;
-    letter-spacing: 0.1em;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 body {
-    font-weight: 300;
+  font-weight: 300;
 }
 ul.lista-ander {
-    list-style: none;
+  list-style: none;
 }
 ul.lista-ander li {
-    position: relative;
+  position: relative;
 }
 ul.lista-ander li::after {
-    content: "";
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    left: -30px;
-    background-color: #fff;
-    border: 2.5px solid #b49b57;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: -30px;
+  background-color: #fff;
+  border: 2.5px solid #b49b57;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
 }
 .lista-ander li::before {
-    content: "";
-    position: absolute;
-    width: 2px;
-    background-color: #ccc;
-    top: 0;
-    bottom: 0;
-    left: -23px;
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: #ccc;
+  top: 0;
+  bottom: 0;
+  left: -23px;
 }
 
 .place {
-    font-weight: 400;
-    font-size: 1.2rem;
+  font-weight: 400;
+  font-size: 1.17rem;
 }
 .job {
-    font-size: 1.2rem;
+  font-size: 1.17rem;
 }
 .desc {
-    font-style: italic;
-    text-align: justify;
-    display: block;
+  font-style: italic;
+  text-align: justify;
+  display: block;
 }
 dl {
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
-    grid-template-rows: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: auto;
 }
 dt {
-    font-weight: 300;
-    font-size: 1.4rem;
-    background-color: #c0c0c0;
-    margin-bottom: 0.2rem;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(150, 150, 150, 0.74);
-    grid-column: 1/2;
-    padding-left: 1rem;
+  font-weight: 300;
+  font-size: 1.4rem;
+  background-color: #c0c0c0;
+  margin-bottom: 0.2rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(150, 150, 150, 0.74);
+  grid-column: 1/2;
+  padding-left: 1rem;
 }
 dd {
-    margin-bottom: 0.2rem;
-    grid-column: 2/7;
-    padding-left: 1rem;
+  margin-bottom: 0.2rem;
+  grid-column: 2/6;
+  padding-left: 1rem;
 }
 
 dd li {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 p {
-    margin-bottom: 00.5rem;
+  margin-bottom: 00.5rem;
 }
 html {
-    font-size: 0.99rem !important;
+  font-size: 0.99rem !important;
 }
 
 p {
-    text-align: justify;
-    text-justify: inter-word;
+  text-align: justify;
+  text-justify: inter-word;
 }

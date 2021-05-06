@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <title>BarbaRuiva</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -24,6 +29,7 @@
       }
       body {
         min-width: initial !important;
+        font-family: Roboto;
       }
     </style>
   </head>
@@ -140,12 +146,27 @@
       </div>
     </div>
     <div class="sheet padding-10mm">
-      <h4>Skills de Desenvolvimento</h4>
+      <div class="grid">
+        <div class="coluna-conteudo">
+          <ul class="lista-ander">
+            <li>
+              <span class="place">2020/2021 - Indeorum</span> <br />
+
+              <span class="job">Desenvolvedor FullStack</span> <br />
+              <span class="desc">
+                Atuei na linha FullStack de desenvovimento do projeto Sthetum,
+                usando tecnologias como Ruby on Rails no backend e Nuxt.js no
+                frontend. Também atuei com um perfil de engenheiro de dados na
+                melhoria e desenvolvimento do projeto de banco de dados.
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h4 class="mt-5">Skills de Desenvolvimento</h4>
 
       <dl>
-        <dt>
-          Backend:
-        </dt>
+        <dt>Backend:</dt>
         <dd>
           <ul class="list-inline">
             <li class="list-inline-item">
@@ -157,12 +178,14 @@
             <li class="list-inline-item">Python (Bottle)</li>
             <li class="list-inline-item">NodeJS (Express, Restify)</li>
             <li class="list-inline-item">Golang</li>
+            <li class="list-inline-item">Ruby (Rails)</li>
             <li class="list-inline-item">Xtend</li>
             <li class="list-inline-item">
-              Geração de estáticos com Hugo e Jekyll
+              Geração de estáticos com Hugo, Jekyll e Nuxt.js
             </li>
             <li class="list-inline-item">
-              ORM (Sequelize, Hibernate, ORMLite, Peewee, Eloquent)
+              ORM (Sequelize, Hibernate, ORMLite, Peewee, Eloquent,
+              ActiveRecord)
             </li>
             <li class="list-inline-item">
               Autenticação (BasicAuth, JWT, AuthToken e OAUTH)
@@ -173,44 +196,39 @@
           </ul>
         </dd>
 
-        <dt>
-          Bancos:
-        </dt>
+        <dt>Bancos:</dt>
         <dd>
           <ul class="list-inline">
             <li class="list-inline-item">MySQL</li>
             <li class="list-inline-item">SQLite</li>
-            <li class="list-inline-item">Mongo</li>
+            <li class="list-inline-item">MongoDB</li>
             <li class="list-inline-item">neDB</li>
             <li class="list-inline-item">Redis</li>
             <li class="list-inline-item">PostgreSQL</li>
           </ul>
         </dd>
-        <dt>
-          Frontend:
-        </dt>
+        <dt>Frontend:</dt>
         <dd>
           <ul class="list-inline">
             <li class="list-inline-item">HTML, CSS, JS (ES6)</li>
             <li class="list-inline-item">Quasar (Vue.js)</li>
+            <li class="list-inline-item">Nuxt.js (Vue.js)</li>
+            <li class="list-inline-item">Vuetify/Buefy (Vue.js)</li>
+            <li class="list-inline-item">Bulma</li>
             <li class="list-inline-item">Bootstrap</li>
             <li class="list-inline-item">Materialize.css</li>
             <li class="list-inline-item">PureCSS</li>
             <li class="list-inline-item">Bundlers (Webpack, Parcel)</li>
           </ul>
         </dd>
-        <dt>
-          Mobile:
-        </dt>
+        <dt>Mobile:</dt>
         <dd>
           <ul class="list-inline">
             <li class="list-inline-item">Cordova</li>
             <li class="list-inline-item">Android SDK</li>
           </ul>
         </dd>
-        <dt>
-          Protocolos:
-        </dt>
+        <dt>Protocolos:</dt>
         <dd>
           <ul class="list-inline">
             <li class="list-inline-item">Modbus RTU e ASCII</li>
@@ -219,9 +237,7 @@
             <li class="list-inline-item">REST</li>
           </ul>
         </dd>
-        <dt>
-          Embarcados:
-        </dt>
+        <dt>Embarcados:</dt>
         <dd>
           <ul class="list-inline">
             <li class="list-inline-item">
@@ -229,27 +245,25 @@
               embarcados ARM/MIPS (Beaglebone, Raspberry e Linkit)
             </li>
             <li class="list-inline-item">
-              Compiladores C/C++ (TI-RTOS, AVR, XC8)
+              Compiladores C/C++ (TI-RTOS, AVR, XC8, GCC)
             </li>
-            <li class="list-inline-item">ESP32 (esp-sdk, freeRTOS)</li>
+            <li class="list-inline-item">
+              ESP32 (esp-sdk, freeRTOS, Platform.io, MongooseOS)
+            </li>
           </ul>
         </dd>
-        <dt>
-          Outros:
-        </dt>
+        <dt>Outros:</dt>
         <dd>
           <ul class="list-inline">
-            <li class="list-inline-item">Projetos e Montagens de PCB</li>
-            <li class="list-inline-item">Automação com Bash</li>
             <li class="list-inline-item">
-              nginx (Servidor, Proxy reverso)
+              Projetos, Prototipagens e Montagens de PCB (Eagle, Proteus)
             </li>
+            <li class="list-inline-item">Automação com Bash</li>
+            <li class="list-inline-item">nginx (Servidor, Proxy reverso)</li>
             <li class="list-inline-item">
               Automação de geração de SSL/LetsEncrypt
             </li>
-            <li class="list-inline-item">
-              Automação residencial com OpenHAB
-            </li>
+            <li class="list-inline-item">Automação residencial com OpenHAB</li>
           </ul>
         </dd>
       </dl>
