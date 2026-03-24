@@ -54,6 +54,226 @@
   grid-column: 3/6;
 }
 
+/* Folhas só com texto: usa a largura inteira da A4 (evita faixa vazia onde seria a coluna da foto) */
+.coluna-conteudo-full {
+  grid-column: 1 / -1;
+}
+
+/*
+ * Folha 2: timeline aninhada — duas colunas independentes; só o primeiro card
+ * à direita usa nest-offset (encaixe no eixo). Sem margin negativa entre cards
+ * (evita texto sobreposto na mesma coluna).
+ */
+.sheet-exp h4 {
+  margin-bottom: 0.75rem;
+}
+
+.sheet-exp .exp-timeline {
+  margin-top: 0.15rem;
+}
+
+.exp-timeline {
+  position: relative;
+  --exp-tl-gutter: 24px;
+  --exp-tl-pad: 0.85rem;
+  /* Espaço entre cards na mesma coluna (evita sobrepor texto) */
+  --exp-tl-col-gap: 1.55rem;
+  /* Primeiro card à direita desce para encaixar ao lado do primeiro à esquerda (só eixo transversal) */
+  --exp-tl-nest-offset: 2.85rem;
+  --exp-tl-pin-size: 15px;
+  --exp-tl-pin-border: 2.5px;
+  --exp-tl-pin-y-nudge: -1.75rem;
+}
+
+/* Tipografia igual à folha 1 (.lista-ander): .place / .job globais; .desc herda do documento */
+
+.exp-timeline .exp-tl-desc {
+  margin-top: 0;
+}
+
+.exp-timeline .exp-tl-desc .desc {
+  margin-top: 0;
+}
+
+.exp-timeline-spine {
+  position: absolute;
+  top: 0.35rem;
+  bottom: 0.35rem;
+  left: calc((100% - var(--exp-tl-gutter)) / 2 + var(--exp-tl-gutter) / 2);
+  width: 2px;
+  margin-left: -1px;
+  background-color: #ccc;
+  border-radius: 1px;
+  z-index: 0;
+}
+
+.exp-tl-nested {
+  display: grid;
+  grid-template-columns: 1fr var(--exp-tl-gutter) 1fr;
+  align-items: start;
+  column-gap: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.exp-tl-col--left,
+.exp-tl-col--right {
+  display: flex;
+  flex-direction: column;
+  gap: var(--exp-tl-col-gap);
+  min-width: 0;
+}
+
+.exp-tl-col--right>.exp-tl-stack:first-child {
+  margin-top: var(--exp-tl-nest-offset);
+}
+
+.exp-tl-stack {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.exp-tl-gutter {
+  min-height: 1px;
+}
+
+.exp-tl-text {
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.exp-tl-text--left {
+  padding-left: 0.35rem;
+  padding-right: var(--exp-tl-pad);
+  text-align: right;
+}
+
+.exp-tl-col--left>.exp-tl-stack:first-child .exp-tl-meta.exp-tl-text--left {
+  padding-top: 0.2rem;
+}
+
+.exp-tl-text--left .desc {
+  text-align: right;
+  text-justify: auto;
+}
+
+.exp-tl-text--right {
+  padding-left: var(--exp-tl-pad);
+  padding-right: 0.35rem;
+  text-align: left;
+}
+
+/* Pin no eixo, sem faixa de layout entre .job e .desc (altura 0 + overflow visível) */
+.exp-tl-pin-row--left,
+.exp-tl-pin-row--right {
+  position: relative;
+  flex-shrink: 0;
+  height: 0;
+  min-height: 0;
+  overflow: visible;
+  margin: 0;
+}
+
+.exp-tl-pin-row--left .exp-tl-pin {
+  position: absolute;
+  left: calc(100% + var(--exp-tl-gutter) / 2 - var(--exp-tl-pin-size) / 2);
+  top: var(--exp-tl-pin-y-nudge);
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.exp-tl-pin-row--right .exp-tl-pin {
+  position: absolute;
+  left: calc(var(--exp-tl-gutter) / -2 - var(--exp-tl-pin-size) / 2);
+  top: var(--exp-tl-pin-y-nudge);
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.exp-tl-text .desc {
+  hyphens: auto;
+}
+
+.exp-tl-pin {
+  display: block;
+  width: var(--exp-tl-pin-size);
+  height: var(--exp-tl-pin-size);
+  box-sizing: border-box;
+  border: var(--exp-tl-pin-border) solid #b49b57;
+  border-radius: 50%;
+  background-color: #fff;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (max-width: 700px) {
+  .exp-timeline-spine {
+    display: none;
+  }
+
+  .exp-tl-nested {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .exp-tl-gutter {
+    display: none;
+  }
+
+  .exp-tl-col--left,
+  .exp-tl-col--right {
+    gap: 1.1rem;
+  }
+
+  .exp-tl-col--right>.exp-tl-stack:first-child {
+    margin-top: 0;
+  }
+
+  .exp-tl-col--left>.exp-tl-stack:not(:first-child),
+  .exp-tl-col--right>.exp-tl-stack:not(:first-child) {
+    margin-top: 0;
+  }
+
+  .exp-tl-pin-row--left,
+  .exp-tl-pin-row--right {
+    height: auto;
+    min-height: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 0 0.15rem;
+    margin: 0;
+  }
+
+  .exp-tl-pin-row--left .exp-tl-pin,
+  .exp-tl-pin-row--right .exp-tl-pin {
+    position: static;
+    transform: none;
+    margin-top: -0.2rem;
+  }
+
+  .exp-tl-col--left>.exp-tl-stack:first-child .exp-tl-meta.exp-tl-text--left {
+    padding-top: 0;
+  }
+
+  .exp-tl-text--left,
+  .exp-tl-text--right {
+    padding-left: 2.25rem;
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .exp-tl-text--left .desc,
+  .exp-tl-text--right .desc {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+
 h4 {
   font-weight: 100;
   letter-spacing: 0.1em;
@@ -64,6 +284,30 @@ h4 {
 
 body {
   font-weight: 300;
+  overflow-x: hidden;
+}
+
+dd .list-inline {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
+dd .list-inline-item {
+  white-space: normal;
+  margin-bottom: 0.25rem;
+}
+
+.sheet-skills dl {
+  font-size: 0.92rem;
+}
+
+.sheet-skills dt {
+  font-size: 1.25rem;
+}
+
+.sheet-skills dd li {
+  font-size: 1rem;
 }
 
 ul.lista-ander {
@@ -140,7 +384,7 @@ dd li {
 }
 
 p {
-  margin-bottom: 00.5rem;
+  margin-bottom: 0.5rem;
 }
 
 html {

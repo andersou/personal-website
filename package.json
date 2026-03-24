@@ -1,7 +1,8 @@
 {
-  "name": "barbaruiva.tech",
+  "name": "personal-website",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
+  "description": "Currículo / site pessoal (HTML estático)",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "browser-sync start --server --files \"**\""
@@ -9,6 +10,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.14"
+    "browser-sync": "^3.0.4"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }
