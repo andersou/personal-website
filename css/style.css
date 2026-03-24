@@ -79,10 +79,9 @@
   /* Espaço entre cards na mesma coluna (evita sobrepor texto) */
   --exp-tl-col-gap: 1.55rem;
   /* Primeiro card à direita desce para encaixar ao lado do primeiro à esquerda (só eixo transversal) */
-  --exp-tl-nest-offset: 2.85rem;
+  --exp-tl-nest-offset: 5rem;
   --exp-tl-pin-size: 15px;
   --exp-tl-pin-border: 2.5px;
-  --exp-tl-pin-y-nudge: -1.75rem;
 }
 
 /* Tipografia igual à folha 1 (.lista-ander): .place / .job globais; .desc herda do documento */
@@ -150,7 +149,7 @@
   text-align: right;
 }
 
-.exp-tl-col--left>.exp-tl-stack:first-child .exp-tl-meta.exp-tl-text--left {
+.exp-tl-col--left>.exp-tl-stack:first-child .exp-tl-place-line {
   padding-top: 0.2rem;
 }
 
@@ -165,7 +164,7 @@
   text-align: left;
 }
 
-/* Pin no eixo, sem faixa de layout entre .job e .desc (altura 0 + overflow visível) */
+/* Pin no eixo, entre .place e .job (altura 0 + overflow visível) */
 .exp-tl-pin-row--left,
 .exp-tl-pin-row--right {
   position: relative;
@@ -179,17 +178,47 @@
 .exp-tl-pin-row--left .exp-tl-pin {
   position: absolute;
   left: calc(100% + var(--exp-tl-gutter) / 2 - var(--exp-tl-pin-size) / 2);
-  top: var(--exp-tl-pin-y-nudge);
+  top: 0;
   transform: translateY(-50%);
   z-index: 2;
+}
+
+.exp-tl-pin-row--left .exp-tl-pin::after {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 50%;
+  z-index: 3;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 6px 4px 0;
+  border-color: transparent rgba(160, 130, 60, 0.2) transparent transparent;
+  pointer-events: none;
 }
 
 .exp-tl-pin-row--right .exp-tl-pin {
   position: absolute;
   left: calc(var(--exp-tl-gutter) / -2 - var(--exp-tl-pin-size) / 2);
-  top: var(--exp-tl-pin-y-nudge);
+  top: 0;
   transform: translateY(-50%);
   z-index: 2;
+}
+
+.exp-tl-pin-row--right .exp-tl-pin::after {
+  content: "";
+  position: absolute;
+  right: -7px;
+  top: 50%;
+  z-index: 3;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 0 4px 6px;
+  border-color: transparent transparent transparent rgba(160, 130, 60, 0.2);
+  pointer-events: none;
 }
 
 .exp-tl-text .desc {
@@ -256,7 +285,12 @@
     margin-top: -0.2rem;
   }
 
-  .exp-tl-col--left>.exp-tl-stack:first-child .exp-tl-meta.exp-tl-text--left {
+  .exp-tl-pin-row--left .exp-tl-pin::after,
+  .exp-tl-pin-row--right .exp-tl-pin::after {
+    display: none;
+  }
+
+  .exp-tl-col--left>.exp-tl-stack:first-child .exp-tl-place-line {
     padding-top: 0;
   }
 
