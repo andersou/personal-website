@@ -28,6 +28,10 @@
 </head>
 
 <body class="A4">
+  <div class="language-selector" role="group" aria-label="Language selector">
+    <button type="button" class="language-option is-active" data-lang-button="pt" aria-pressed="true">PT</button>
+    <button type="button" class="language-option" data-lang-button="en" aria-pressed="false">EN</button>
+  </div>
   <div class="sheet padding-10mm">
     <div class="grid">
       <div class="coluna-foto pr-5">
@@ -54,50 +58,50 @@
             </li>
           </ul>
         </div>
-        <h4>Premiações</h4>
+        <h4 data-i18n="awardsTitle">Premiações</h4>
         <ul class="lista-ander">
           <li>
-            <span class="place">2017 - Maratona de Inovação de Pelotas / Hackaton</span>
-            <br />1° Lugar - PETFY, Sistema de adoção PET.
+            <span class="place" data-i18n="awardPlace">2017 - Maratona de Inovação de Pelotas / Hackaton</span>
+            <br /><span data-i18n="awardDesc">1° Lugar - PETFY, Sistema de adoção PET.</span>
           </li>
         </ul>
       </div>
       <div class="coluna-conteudo">
-        <h4>Sobre mim</h4>
-        <p>
+        <h4 data-i18n="aboutTitle">Sobre mim</h4>
+        <p data-i18n="aboutP1">
           Desenvolvedor de software com foco em backend, integração de sistemas e liderança técnica. Tech Lead na
           <strong>Serasa Experian</strong> (act digital). Técnico em eletrotécnica (IFSul); graduação em Ciência da
           Computação (UFPel) em andamento, em paralelo à carreira em engenharia de software.
         </p>
-        <p>
+        <p data-i18n="aboutP2">
           Trajetória que conecta sistemas embarcados e ambientes industriais a microsserviços, nuvem e dados em larga
           escala — consultoria, seguradoras, fintech e produtos de identidade e KYC. Experiência recorrente na evolução
           de legados, alinhando arquitetura, entrega técnica e times a negócio, conformidade e continuidade operacional.
         </p>
-        <h4>Formação</h4>
+        <h4 data-i18n="educationTitle">Formação</h4>
         <ul class="lista-ander">
           <li>
-            <span class="place">
+            <span class="place" data-i18n="educationIfsulPlace">
               2009-2014 - Instituto Federal Sul-Rio-Grandense</span>
             <br />
-            Técnico em eletrotécnica
+            <span data-i18n="educationIfsulDesc">Técnico em eletrotécnica</span>
           </li>
           <li>
-            <span class="place">2015 - Flexxo Pelotas</span> <br />
-            Desenvolvedor Java Web
+            <span class="place" data-i18n="educationFlexxoPlace">2015 - Flexxo Pelotas</span> <br />
+            <span data-i18n="educationFlexxoDesc">Desenvolvedor Java Web</span>
           </li>
           <li>
-            <span class="place">2017-2021 - Universidade Federal de Pelotas (UFPel)</span><br />
-            Estudos de graduação em Ciência da Computação
+            <span class="place" data-i18n="educationUfpelPlace">2017-2021 - Universidade Federal de Pelotas (UFPel)</span><br />
+            <span data-i18n="educationUfpelDesc">Estudos de graduação em Ciência da Computação</span>
           </li>
         </ul>
 
-        <h4>Experiências Profissionais</h4>
+        <h4 data-i18n="experienceTitle">Experiências Profissionais</h4>
         <ul class="lista-ander">
           <li>
-            <span class="place">2025/atualmente - Serasa Experian / act digital</span> <br />
+            <span class="place" data-i18n="experienceSerasaPlace">2025/atualmente - Serasa Experian / act digital</span> <br />
             <span class="job">Tech Lead</span> <br />
-            <span class="desc">
+            <span class="desc" data-i18n="experienceSerasaDesc">
               Atuando no ecossistema KYC em produtos como Verify ID (verificação e retorno de dados), KBA (verificação baseada em conhecimento) e equilíbrio entre
               conformidade, antifraude e experiência. Evolução ponta a ponta de aplicações e legados — priorização,
               transições seguras, convivência de stacks e entregas com risco ao negócio controlado. AWS (SQS, SNS, S3,
@@ -112,15 +116,15 @@
   <div class="sheet padding-10mm sheet-exp">
     <div class="grid">
       <div class="coluna-conteudo coluna-conteudo-full">
-        <h4>Experiências Profissionais</h4>
-        <div class="exp-timeline" aria-label="Linha do tempo profissional">
+        <h4 data-i18n="experienceTitle">Experiências Profissionais</h4>
+        <div class="exp-timeline" aria-label="Linha do tempo profissional" data-i18n="timelineLabel" data-i18n-attr="aria-label">
           <div class="exp-timeline-spine" aria-hidden="true"></div>
 
           <div class="exp-tl-nested">
             <div class="exp-tl-col exp-tl-col--left">
               <div class="exp-tl-stack exp-tl-stack--left">
                 <div class="exp-tl-place-line exp-tl-text exp-tl-text--left">
-                  <span class="place">2023/2025 - Porto Seguro / Softvaro</span>
+                  <span class="place" data-i18n="experiencePortoPlace">2023/2025 - Porto Seguro / Softvaro</span>
                 </div>
                 <div class="exp-tl-pin-row exp-tl-pin-row--left" aria-hidden="true">
                   <span class="exp-tl-pin"></span>
@@ -129,7 +133,7 @@
                   <span class="job">Senior Software Engineer</span>
                 </div>
                 <div class="exp-tl-desc exp-tl-text exp-tl-text--left">
-                  <span class="desc">
+                  <span class="desc" data-i18n="experiencePortoDesc">
                     Modernização de legados (AngularJS, WebSphere, Java 7/8, Oracle OSB/SOA e Oracle DB) e entrega de
                     microserviços com Sensedia, Java 11–21 e Spring (Boot, MVC, Data, Batch). Pipelines e jobs de alto
                     volume com Spring Batch e CAWA; automação de processos para acelerar o ciclo de desenvolvimento.
@@ -138,16 +142,16 @@
               </div>
               <div class="exp-tl-stack exp-tl-stack--left">
                 <div class="exp-tl-place-line exp-tl-text exp-tl-text--left">
-                  <span class="place">2022 - Garten Automação</span>
+                  <span class="place" data-i18n="experienceGartenConsultingPlace">2022 - Garten Automação</span>
                 </div>
                 <div class="exp-tl-pin-row exp-tl-pin-row--left" aria-hidden="true">
                   <span class="exp-tl-pin"></span>
                 </div>
                 <div class="exp-tl-job-line exp-tl-text exp-tl-text--left">
-                  <span class="job">Consultor / Tech Lead</span>
+                  <span class="job" data-i18n="experienceGartenConsultingJob">Consultor / Tech Lead</span>
                 </div>
                 <div class="exp-tl-desc exp-tl-text exp-tl-text--left">
-                  <span class="desc">
+                  <span class="desc" data-i18n="experienceGartenConsultingDesc">
                     Atualizações, correções e evoluções de projetos legados, apoio à gestão e decisão estratégica de novos
                     produtos.
                   </span>
@@ -155,16 +159,16 @@
               </div>
               <div class="exp-tl-stack exp-tl-stack--left">
                 <div class="exp-tl-place-line exp-tl-text exp-tl-text--left">
-                  <span class="place">2021 - Nave.rs </span>
+                  <span class="place" data-i18n="experienceNavePlace">2021 - Nave.rs </span>
                 </div>
                 <div class="exp-tl-pin-row exp-tl-pin-row--left" aria-hidden="true">
                   <span class="exp-tl-pin"></span>
                 </div>
                 <div class="exp-tl-job-line exp-tl-text exp-tl-text--left">
-                  <span class="job">Desenvolvedor Backend / Tech Lead</span>
+                  <span class="job" data-i18n="experienceNaveJob">Desenvolvedor Backend / Tech Lead</span>
                 </div>
                 <div class="exp-tl-desc exp-tl-text exp-tl-text--left">
-                  <span class="desc">
+                  <span class="desc" data-i18n="experienceNaveDesc">
                     Desenvolvimento backend com koa.js, express.js, Ruby on Rails e Django/Django REST. Como líder técnico,
                     atendimento a clientes com stacks distintas da linha principal da empresa, nos desafios técnicos mais
                     exigentes.
@@ -173,16 +177,16 @@
               </div>
               <div class="exp-tl-stack exp-tl-stack--left">
                 <div class="exp-tl-place-line exp-tl-text exp-tl-text--left">
-                  <span class="place">2018/2020 - Elimu Social</span>
+                  <span class="place" data-i18n="experienceElimuPlace">2018/2020 - Elimu Social</span>
                 </div>
                 <div class="exp-tl-pin-row exp-tl-pin-row--left" aria-hidden="true">
                   <span class="exp-tl-pin"></span>
                 </div>
                 <div class="exp-tl-job-line exp-tl-text exp-tl-text--left">
-                  <span class="job">Pesquisador em tecnologias educacionais</span>
+                  <span class="job" data-i18n="experienceElimuJob">Pesquisador em tecnologias educacionais</span>
                 </div>
                 <div class="exp-tl-desc exp-tl-text exp-tl-text--left">
-                  <span class="desc">
+                  <span class="desc" data-i18n="experienceElimuDesc">
                     Desenvolvimento de sistemas educacionais com hardware embarcado, extensões para Scratch integradas a
                     produtos Elimu e pesquisas em Computação Criativa. Idealizador do projeto LowCostCreativeRobotics.
                   </span>
@@ -190,16 +194,16 @@
               </div>
               <div class="exp-tl-stack exp-tl-stack--left">
                 <div class="exp-tl-place-line exp-tl-text exp-tl-text--left">
-                  <span class="place">2012/2013 - Ascendy Iluminação</span>
+                  <span class="place" data-i18n="experienceAscendyPlace">2012/2013 - Ascendy Iluminação</span>
                 </div>
                 <div class="exp-tl-pin-row exp-tl-pin-row--left" aria-hidden="true">
                   <span class="exp-tl-pin"></span>
                 </div>
                 <div class="exp-tl-job-line exp-tl-text exp-tl-text--left">
-                  <span class="job">Técnico em Eletrotécnica</span>
+                  <span class="job" data-i18n="experienceAscendyJob">Técnico em Eletrotécnica</span>
                 </div>
                 <div class="exp-tl-desc exp-tl-text exp-tl-text--left">
-                  <span class="desc">
+                  <span class="desc" data-i18n="experienceAscendyDesc">
                     Manutenção elétrica, projetos elétricos e luminotécnicos.
                   </span>
                 </div>
@@ -211,7 +215,7 @@
             <div class="exp-tl-col exp-tl-col--right">
               <div class="exp-tl-stack exp-tl-stack--right">
                 <div class="exp-tl-place-line exp-tl-text exp-tl-text--right">
-                  <span class="place">2022/2023 - Grano Safe</span>
+                  <span class="place" data-i18n="experienceGranoPlace">2022/2023 - Grano Safe</span>
                 </div>
                 <div class="exp-tl-pin-row exp-tl-pin-row--right" aria-hidden="true">
                   <span class="exp-tl-pin"></span>
@@ -220,7 +224,7 @@
                   <span class="job">Software Architect / Tech Lead</span>
                 </div>
                 <div class="exp-tl-desc exp-tl-text exp-tl-text--right">
-                  <span class="desc">
+                  <span class="desc" data-i18n="experienceGranoDesc">
                     Definição de arquiteturas e gestão de equipes. Responsável pelo primeiro MVP do Metrics, liderando
                     arquitetura, requisitos, backend e provisionamento em cloud com Google Cloud (Cloud SQL, Cloud Storage,
                     Cloud Run, Cloud Build, Container Registry e Secret Manager), com foco em escalabilidade, segurança e
@@ -230,16 +234,16 @@
               </div>
               <div class="exp-tl-stack exp-tl-stack--right">
                 <div class="exp-tl-place-line exp-tl-text exp-tl-text--right">
-                  <span class="place">2021/2023 - DBServer</span>
+                  <span class="place" data-i18n="experienceDbserverPlace">2021/2023 - DBServer</span>
                 </div>
                 <div class="exp-tl-pin-row exp-tl-pin-row--right" aria-hidden="true">
                   <span class="exp-tl-pin"></span>
                 </div>
                 <div class="exp-tl-job-line exp-tl-text exp-tl-text--right">
-                  <span class="job">Desenvolvedor Java</span>
+                  <span class="job" data-i18n="experienceDbserverJob">Desenvolvedor Java</span>
                 </div>
                 <div class="exp-tl-desc exp-tl-text exp-tl-text--right">
-                  <span class="desc">
+                  <span class="desc" data-i18n="experienceDbserverDesc">
                     Atuação com stacks legadas em migração de Java 6 para versões com suporte estendido. Troca do build de
                     Ant para Maven em grandes projetos, com migrações e ajustes em código que utilizava Struts, VRaptor,
                     EJB, Swing, Spring, frameworks customizados, etc.
@@ -248,16 +252,16 @@
               </div>
               <div class="exp-tl-stack exp-tl-stack--right">
                 <div class="exp-tl-place-line exp-tl-text exp-tl-text--right">
-                  <span class="place">2020/2021 - Indeorum </span>
+                  <span class="place" data-i18n="experienceIndeorumPlace">2020/2021 - Indeorum </span>
                 </div>
                 <div class="exp-tl-pin-row exp-tl-pin-row--right" aria-hidden="true">
                   <span class="exp-tl-pin"></span>
                 </div>
                 <div class="exp-tl-job-line exp-tl-text exp-tl-text--right">
-                  <span class="job">Desenvolvedor FullStack</span>
+                  <span class="job" data-i18n="experienceIndeorumJob">Desenvolvedor FullStack</span>
                 </div>
                 <div class="exp-tl-desc exp-tl-text exp-tl-text--right">
-                  <span class="desc">
+                  <span class="desc" data-i18n="experienceIndeorumDesc">
                     Desenvolvimento dos projetos Sthetum e DocTour com Ruby on Rails no backend e Nuxt.js no frontend.
                     Atuação com perfil de engenheiro de dados na melhoria e evolução do banco de dados do Sthetum.
                   </span>
@@ -265,16 +269,16 @@
               </div>
               <div class="exp-tl-stack exp-tl-stack--right">
                 <div class="exp-tl-place-line exp-tl-text exp-tl-text--right">
-                  <span class="place">2014/2020 - Garten Automação</span>
+                  <span class="place" data-i18n="experienceGartenPlace">2014/2020 - Garten Automação</span>
                 </div>
                 <div class="exp-tl-pin-row exp-tl-pin-row--right" aria-hidden="true">
                   <span class="exp-tl-pin"></span>
                 </div>
                 <div class="exp-tl-job-line exp-tl-text exp-tl-text--right">
-                  <span class="job">Desenvolvedor de sistemas embarcados / FullStack</span>
+                  <span class="job" data-i18n="experienceGartenJob">Desenvolvedor de sistemas embarcados / FullStack</span>
                 </div>
                 <div class="exp-tl-desc exp-tl-text exp-tl-text--right">
-                  <span class="desc">
+                  <span class="desc" data-i18n="experienceGartenDesc">
                     Projetos sob medida para a agroindústria: placas de circuito impresso, firmwares para PIC, Atmega e
                     Tiva-C (ARM). Soluções para indústria 4.0 com sistemas web em Java integrados a embarcados, supervisão,
                     MediaTek, Beaglebone e Raspberry Pi.
@@ -288,50 +292,50 @@
     </div>
   </div>
   <div class="sheet padding-10mm sheet-skills">
-    <h4 class="mt-3">Skills de Desenvolvimento</h4>
+    <h4 class="mt-3" data-i18n="skillsTitle">Skills de Desenvolvimento</h4>
 
     <dl>
-      <dt>Backend:</dt>
+      <dt data-i18n="skillsBackend">Backend:</dt>
       <dd>
         <ul class="list-inline">
-          <li class="list-inline-item">
+          <li class="list-inline-item" data-i18n="skillBackendJava">
             Java 17–25, virtual threads (JSF, SparkJava, Servlets, EJB, JSP, Spring Boot/MVC/Data/Batch, Security,
             Cache, VRaptor, Beans...)
           </li>
           <li class="list-inline-item">
             PHP (Slim, Laravel, Lumen, Wordpress, Woocommerce)
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item" data-i18n="skillBackendPython">
             Python (Bottle, Django, DjangoREST, automação de pipelines e tarefas operacionais)
           </li>
           <li class="list-inline-item">NodeJS (Express, Restify, koa.js)</li>
           <li class="list-inline-item">Golang</li>
           <li class="list-inline-item">Ruby (Rails)</li>
           <li class="list-inline-item">Xtend</li>
-          <li class="list-inline-item">
+          <li class="list-inline-item" data-i18n="skillStaticGeneration">
             Geração de estáticos com Hugo, Jekyll e Nuxt.js
           </li>
           <li class="list-inline-item">
             ORM (Sequelize, Hibernate, ORMLite, Peewee, Eloquent,
             ActiveRecord)
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item" data-i18n="skillAuth">
             Autenticação (BasicAuth, JWT, AuthToken e OAUTH)
           </li>
           <li class="list-inline-item">
             Google Cloud (Cloud Run, Cloud SQL, Cloud Build, Cloud Tasks, Cloud Storage, Secret Manager, Container
             Registry, etc.)
           </li>
-          <li class="list-inline-item">AWS (SQS, SNS, S3, API Gateway, demais serviços gerenciados)</li>
+          <li class="list-inline-item" data-i18n="skillAws">AWS (SQS, SNS, S3, API Gateway, demais serviços gerenciados)</li>
           <li class="list-inline-item">Apache Airflow</li>
           <li class="list-inline-item">OpenSearch, Parquet</li>
-          <li class="list-inline-item">Testes de carga: Gatling, JMeter</li>
+          <li class="list-inline-item" data-i18n="skillLoadTesting">Testes de carga: Gatling, JMeter</li>
           <li class="list-inline-item">IBM WebSphere, Oracle OSB/SOA, Oracle DB</li>
           <li class="list-inline-item">API Gateway Sensedia, CA Workload Automation (CAWA)</li>
         </ul>
       </dd>
 
-      <dt>Bancos:</dt>
+      <dt data-i18n="skillsDatabases">Bancos:</dt>
       <dd>
         <ul class="list-inline">
           <li class="list-inline-item">MySQL/mariaDB</li>
@@ -342,7 +346,7 @@
           <li class="list-inline-item">PostgreSQL</li>
         </ul>
       </dd>
-      <dt>Frontend:</dt>
+      <dt data-i18n="skillsFrontend">Frontend:</dt>
       <dd>
         <ul class="list-inline">
           <li class="list-inline-item">HTML, CSS, JS (ES6)</li>
@@ -357,23 +361,23 @@
           <li class="list-inline-item">Bundlers (Webpack, Parcel)</li>
         </ul>
       </dd>
-      <dt>Mobile:</dt>
+      <dt data-i18n="skillsMobile">Mobile:</dt>
       <dd>
         <ul class="list-inline">
           <li class="list-inline-item">Cordova</li>
           <li class="list-inline-item">Android SDK</li>
         </ul>
       </dd>
-      <dt>Protocolos:</dt>
+      <dt data-i18n="skillsProtocols">Protocolos:</dt>
       <dd>
         <ul class="list-inline">
-          <li class="list-inline-item">Modbus RTU e ASCII</li>
-          <li class="list-inline-item">JSON-RPC e JSON-API</li>
+          <li class="list-inline-item" data-i18n="skillModbus">Modbus RTU e ASCII</li>
+          <li class="list-inline-item" data-i18n="skillJsonApi">JSON-RPC e JSON-API</li>
           <li class="list-inline-item">MQTT</li>
           <li class="list-inline-item">REST</li>
         </ul>
       </dd>
-      <dt>Desktop:</dt>
+      <dt data-i18n="skillsDesktop">Desktop:</dt>
       <dd>
         <ul class="list-inline">
           <li class="list-inline-item">Java Swing</li>
@@ -382,14 +386,14 @@
           <li class="list-inline-item">NW.js</li>
         </ul>
       </dd>
-      <dt>Embarcados:</dt>
+      <dt data-i18n="skillsEmbedded">Embarcados:</dt>
       <dd>
         <ul class="list-inline">
-          <li class="list-inline-item">
+          <li class="list-inline-item" data-i18n="skillEmbeddedLinux">
             Experiência em personalização de sistemas operacionais linux
             embarcados ARM/MIPS (Beaglebone, Raspberry e Linkit)
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item" data-i18n="skillCompilers">
             Compiladores C/C++ (TI-RTOS, AVR, XC8, GCC)
           </li>
           <li class="list-inline-item">
@@ -397,22 +401,236 @@
           </li>
         </ul>
       </dd>
-      <dt>Outros:</dt>
+      <dt data-i18n="skillsOther">Outros:</dt>
       <dd>
         <ul class="list-inline">
-          <li class="list-inline-item">
+          <li class="list-inline-item" data-i18n="skillPcb">
             Projetos, Prototipagens e Montagens de PCB (Eagle, Proteus)
           </li>
-          <li class="list-inline-item">Automação com Bash</li>
-          <li class="list-inline-item">nginx (Servidor, Proxy reverso)</li>
-          <li class="list-inline-item">
+          <li class="list-inline-item" data-i18n="skillBash">Automação com Bash</li>
+          <li class="list-inline-item" data-i18n="skillNginx">nginx (Servidor, Proxy reverso)</li>
+          <li class="list-inline-item" data-i18n="skillSsl">
             Automação de geração de SSL/LetsEncrypt
           </li>
-          <li class="list-inline-item">Automação residencial com OpenHAB</li>
+          <li class="list-inline-item" data-i18n="skillOpenhab">Automação residencial com OpenHAB</li>
         </ul>
       </dd>
     </dl>
   </div>
+  <script>
+    (() => {
+      const translations = {
+        pt: {
+          documentLang: "pt-BR",
+          pageTitle: "Anderson Souza — Currículo",
+          languageSelectorLabel: "Seletor de idioma",
+          awardsTitle: "Premiações",
+          awardPlace: "2017 - Maratona de Inovação de Pelotas / Hackaton",
+          awardDesc: "1° Lugar - PETFY, Sistema de adoção PET.",
+          aboutTitle: "Sobre mim",
+          aboutP1: "Desenvolvedor de software com foco em backend, integração de sistemas e liderança técnica. Tech Lead na <strong>Serasa Experian</strong> (act digital). Técnico em eletrotécnica (IFSul); graduação em Ciência da Computação (UFPel) em andamento, em paralelo à carreira em engenharia de software.",
+          aboutP2: "Trajetória que conecta sistemas embarcados e ambientes industriais a microsserviços, nuvem e dados em larga escala — consultoria, seguradoras, fintech e produtos de identidade e KYC. Experiência recorrente na evolução de legados, alinhando arquitetura, entrega técnica e times a negócio, conformidade e continuidade operacional.",
+          educationTitle: "Formação",
+          educationIfsulPlace: "2009-2014 - Instituto Federal Sul-Rio-Grandense",
+          educationIfsulDesc: "Técnico em eletrotécnica",
+          educationFlexxoPlace: "2015 - Flexxo Pelotas",
+          educationFlexxoDesc: "Desenvolvedor Java Web",
+          educationUfpelPlace: "2017-2021 - Universidade Federal de Pelotas (UFPel)",
+          educationUfpelDesc: "Estudos de graduação em Ciência da Computação",
+          experienceTitle: "Experiências Profissionais",
+          experienceSerasaPlace: "2025/atualmente - Serasa Experian / act digital",
+          experienceSerasaDesc: "Atuando no ecossistema KYC em produtos como Verify ID (verificação e retorno de dados), KBA (verificação baseada em conhecimento) e equilíbrio entre conformidade, antifraude e experiência. Evolução ponta a ponta de aplicações e legados — priorização, transições seguras, convivência de stacks e entregas com risco ao negócio controlado. AWS (SQS, SNS, S3, API Gateway, etc.), Spring, Java 17, 21 e 25; pipelines de dados (Apache Airflow, EMR), OpenSearch, SQL e NoSQL; automações em Python.",
+          timelineLabel: "Linha do tempo profissional",
+          experiencePortoPlace: "2023/2025 - Porto Seguro / Softvaro",
+          experiencePortoDesc: "Modernização de legados (AngularJS, WebSphere, Java 7/8, Oracle OSB/SOA e Oracle DB) e entrega de microserviços com Sensedia, Java 11–21 e Spring (Boot, MVC, Data, Batch). Pipelines e jobs de alto volume com Spring Batch e CAWA; automação de processos para acelerar o ciclo de desenvolvimento.",
+          experienceGartenConsultingPlace: "2022 - Garten Automação",
+          experienceGartenConsultingJob: "Consultor / Tech Lead",
+          experienceGartenConsultingDesc: "Atualizações, correções e evoluções de projetos legados, apoio à gestão e decisão estratégica de novos produtos.",
+          experienceNavePlace: "2021 - Nave.rs",
+          experienceNaveJob: "Desenvolvedor Backend / Tech Lead",
+          experienceNaveDesc: "Desenvolvimento backend com koa.js, express.js, Ruby on Rails e Django/Django REST. Como líder técnico, atendimento a clientes com stacks distintas da linha principal da empresa, nos desafios técnicos mais exigentes.",
+          experienceElimuPlace: "2018/2020 - Elimu Social",
+          experienceElimuJob: "Pesquisador em tecnologias educacionais",
+          experienceElimuDesc: "Desenvolvimento de sistemas educacionais com hardware embarcado, extensões para Scratch integradas a produtos Elimu e pesquisas em Computação Criativa. Idealizador do projeto LowCostCreativeRobotics.",
+          experienceAscendyPlace: "2012/2013 - Ascendy Iluminação",
+          experienceAscendyJob: "Técnico em Eletrotécnica",
+          experienceAscendyDesc: "Manutenção elétrica, projetos elétricos e luminotécnicos.",
+          experienceGranoPlace: "2022/2023 - Grano Safe",
+          experienceGranoDesc: "Definição de arquiteturas e gestão de equipes. Responsável pelo primeiro MVP do Metrics, liderando arquitetura, requisitos, backend e provisionamento em cloud com Google Cloud (Cloud SQL, Cloud Storage, Cloud Run, Cloud Build, Container Registry e Secret Manager), com foco em escalabilidade, segurança e soluções para a indústria de grãos.",
+          experienceDbserverPlace: "2021/2023 - DBServer",
+          experienceDbserverJob: "Desenvolvedor Java",
+          experienceDbserverDesc: "Atuação com stacks legadas em migração de Java 6 para versões com suporte estendido. Troca do build de Ant para Maven em grandes projetos, com migrações e ajustes em código que utilizava Struts, VRaptor, EJB, Swing, Spring, frameworks customizados, etc.",
+          experienceIndeorumPlace: "2020/2021 - Indeorum",
+          experienceIndeorumJob: "Desenvolvedor FullStack",
+          experienceIndeorumDesc: "Desenvolvimento dos projetos Sthetum e DocTour com Ruby on Rails no backend e Nuxt.js no frontend. Atuação com perfil de engenheiro de dados na melhoria e evolução do banco de dados do Sthetum.",
+          experienceGartenPlace: "2014/2020 - Garten Automação",
+          experienceGartenJob: "Desenvolvedor de sistemas embarcados / FullStack",
+          experienceGartenDesc: "Projetos sob medida para a agroindústria: placas de circuito impresso, firmwares para PIC, Atmega e Tiva-C (ARM). Soluções para indústria 4.0 com sistemas web em Java integrados a embarcados, supervisão, MediaTek, Beaglebone e Raspberry Pi.",
+          skillsTitle: "Skills de Desenvolvimento",
+          skillsBackend: "Backend:",
+          skillBackendJava: "Java 17–25, virtual threads (JSF, SparkJava, Servlets, EJB, JSP, Spring Boot/MVC/Data/Batch, Security, Cache, VRaptor, Beans...)",
+          skillBackendPython: "Python (Bottle, Django, DjangoREST, automação de pipelines e tarefas operacionais)",
+          skillStaticGeneration: "Geração de estáticos com Hugo, Jekyll e Nuxt.js",
+          skillAuth: "Autenticação (BasicAuth, JWT, AuthToken e OAUTH)",
+          skillAws: "AWS (SQS, SNS, S3, API Gateway, demais serviços gerenciados)",
+          skillLoadTesting: "Testes de carga: Gatling, JMeter",
+          skillsDatabases: "Bancos:",
+          skillsFrontend: "Frontend:",
+          skillsMobile: "Mobile:",
+          skillsProtocols: "Protocolos:",
+          skillModbus: "Modbus RTU e ASCII",
+          skillJsonApi: "JSON-RPC e JSON-API",
+          skillsDesktop: "Desktop:",
+          skillsEmbedded: "Embarcados:",
+          skillEmbeddedLinux: "Experiência em personalização de sistemas operacionais linux embarcados ARM/MIPS (Beaglebone, Raspberry e Linkit)",
+          skillCompilers: "Compiladores C/C++ (TI-RTOS, AVR, XC8, GCC)",
+          skillsOther: "Outros:",
+          skillPcb: "Projetos, Prototipagens e Montagens de PCB (Eagle, Proteus)",
+          skillBash: "Automação com Bash",
+          skillNginx: "nginx (Servidor, Proxy reverso)",
+          skillSsl: "Automação de geração de SSL/LetsEncrypt",
+          skillOpenhab: "Automação residencial com OpenHAB"
+        },
+        en: {
+          documentLang: "en",
+          pageTitle: "Anderson Souza — Resume",
+          languageSelectorLabel: "Language selector",
+          awardsTitle: "Awards",
+          awardPlace: "2017 - Pelotas Innovation Marathon / Hackathon",
+          awardDesc: "1st place - PETFY, pet adoption system.",
+          aboutTitle: "About me",
+          aboutP1: "Software developer focused on backend engineering, system integration, and technical leadership. Tech Lead at <strong>Serasa Experian</strong> (act digital). Electrotechnics technician (IFSul); currently pursuing a Computer Science degree at UFPel alongside a software engineering career.",
+          aboutP2: "A career path that connects embedded systems and industrial environments with microservices, cloud, and large-scale data across consulting, insurance, fintech, and identity/KYC products. Recurrent experience evolving legacy systems while aligning architecture, technical delivery, and teams with business, compliance, and operational continuity.",
+          educationTitle: "Education",
+          educationIfsulPlace: "2009-2014 - Federal Institute of Education, Science and Technology Sul-rio-grandense",
+          educationIfsulDesc: "Electrotechnics Technician",
+          educationFlexxoPlace: "2015 - Flexxo Pelotas",
+          educationFlexxoDesc: "Java Web Developer",
+          educationUfpelPlace: "2017-2021 - Federal University of Pelotas (UFPel)",
+          educationUfpelDesc: "Undergraduate studies in Computer Science",
+          experienceTitle: "Professional Experience",
+          experienceSerasaPlace: "2025/present - Serasa Experian / act digital",
+          experienceSerasaDesc: "Working in the KYC ecosystem on products such as Verify ID (data verification and return), KBA (knowledge-based authentication), and the balance between compliance, antifraud, and customer experience. End-to-end evolution of applications and legacy systems through prioritization, safe transitions, stack coexistence, and business-risk-aware delivery. AWS (SQS, SNS, S3, API Gateway, etc.), Spring, Java 17, 21, and 25; data pipelines (Apache Airflow, EMR), OpenSearch, SQL and NoSQL; Python automations.",
+          timelineLabel: "Professional timeline",
+          experiencePortoPlace: "2023/2025 - Porto Seguro / Softvaro",
+          experiencePortoDesc: "Legacy modernization (AngularJS, WebSphere, Java 7/8, Oracle OSB/SOA, and Oracle DB) and microservice delivery with Sensedia, Java 11-21, and Spring (Boot, MVC, Data, Batch). High-volume pipelines and jobs with Spring Batch and CAWA; process automation to accelerate the development cycle.",
+          experienceGartenConsultingPlace: "2022 - Garten Automação",
+          experienceGartenConsultingJob: "Consultant / Tech Lead",
+          experienceGartenConsultingDesc: "Updates, fixes, and evolution of legacy projects, supporting management and strategic decisions for new products.",
+          experienceNavePlace: "2021 - Nave.rs",
+          experienceNaveJob: "Backend Developer / Tech Lead",
+          experienceNaveDesc: "Backend development with koa.js, express.js, Ruby on Rails, and Django/Django REST. As technical lead, supported clients with stacks outside the company's main line in especially demanding technical challenges.",
+          experienceElimuPlace: "2018/2020 - Elimu Social",
+          experienceElimuJob: "Educational Technology Researcher",
+          experienceElimuDesc: "Development of educational systems with embedded hardware, Scratch extensions integrated with Elimu products, and research in Creative Computing. Creator of the LowCostCreativeRobotics project.",
+          experienceAscendyPlace: "2012/2013 - Ascendy Iluminação",
+          experienceAscendyJob: "Electrotechnics Technician",
+          experienceAscendyDesc: "Electrical maintenance, electrical projects, and lighting design.",
+          experienceGranoPlace: "2022/2023 - Grano Safe",
+          experienceGranoDesc: "Defined architectures and managed teams. Responsible for the first MVP of Metrics, leading architecture, requirements, backend, and cloud provisioning with Google Cloud (Cloud SQL, Cloud Storage, Cloud Run, Cloud Build, Container Registry, and Secret Manager), focused on scalability, security, and solutions for the grain industry.",
+          experienceDbserverPlace: "2021/2023 - DBServer",
+          experienceDbserverJob: "Java Developer",
+          experienceDbserverDesc: "Worked with legacy stacks migrating from Java 6 to versions with extended support. Replaced Ant builds with Maven in large projects, including migrations and code adjustments across Struts, VRaptor, EJB, Swing, Spring, custom frameworks, and more.",
+          experienceIndeorumPlace: "2020/2021 - Indeorum",
+          experienceIndeorumJob: "FullStack Developer",
+          experienceIndeorumDesc: "Developed the Sthetum and DocTour projects with Ruby on Rails on the backend and Nuxt.js on the frontend. Worked with a data engineering profile to improve and evolve the Sthetum database.",
+          experienceGartenPlace: "2014/2020 - Garten Automação",
+          experienceGartenJob: "Embedded Systems Developer / FullStack",
+          experienceGartenDesc: "Custom projects for agribusiness: printed circuit boards, firmware for PIC, Atmega, and Tiva-C (ARM). Industry 4.0 solutions with Java web systems integrated with embedded devices, supervision systems, MediaTek, Beaglebone, and Raspberry Pi.",
+          skillsTitle: "Development Skills",
+          skillsBackend: "Backend:",
+          skillBackendJava: "Java 17-25, virtual threads (JSF, SparkJava, Servlets, EJB, JSP, Spring Boot/MVC/Data/Batch, Security, Cache, VRaptor, Beans...)",
+          skillBackendPython: "Python (Bottle, Django, DjangoREST, pipeline automation and operational tasks)",
+          skillStaticGeneration: "Static generation with Hugo, Jekyll, and Nuxt.js",
+          skillAuth: "Authentication (BasicAuth, JWT, AuthToken, and OAUTH)",
+          skillAws: "AWS (SQS, SNS, S3, API Gateway, and other managed services)",
+          skillLoadTesting: "Load testing: Gatling, JMeter",
+          skillsDatabases: "Databases:",
+          skillsFrontend: "Frontend:",
+          skillsMobile: "Mobile:",
+          skillsProtocols: "Protocols:",
+          skillModbus: "Modbus RTU and ASCII",
+          skillJsonApi: "JSON-RPC and JSON-API",
+          skillsDesktop: "Desktop:",
+          skillsEmbedded: "Embedded:",
+          skillEmbeddedLinux: "Experience customizing embedded Linux operating systems for ARM/MIPS (Beaglebone, Raspberry, and Linkit)",
+          skillCompilers: "C/C++ compilers (TI-RTOS, AVR, XC8, GCC)",
+          skillsOther: "Other:",
+          skillPcb: "PCB projects, prototyping, and assembly (Eagle, Proteus)",
+          skillBash: "Automation with Bash",
+          skillNginx: "nginx (server, reverse proxy)",
+          skillSsl: "SSL/LetsEncrypt generation automation",
+          skillOpenhab: "Home automation with OpenHAB"
+        }
+      };
+
+      const buttons = document.querySelectorAll("[data-lang-button]");
+
+      const readSavedLanguage = () => {
+        try {
+          return localStorage.getItem("resume-language");
+        } catch (_error) {
+          return null;
+        }
+      };
+
+      const detectBrowserLanguage = () => {
+        const browserLang = navigator.language || navigator.languages?.[0];
+        if (!browserLang) return "en";
+        const lang = browserLang.toLowerCase();
+        if (lang.startsWith("pt")) return "pt";
+        return "en";
+      };
+
+      const getInitialLanguage = () => readSavedLanguage() || detectBrowserLanguage();
+
+      const saveLanguage = (lang) => {
+        try {
+          localStorage.setItem("resume-language", lang);
+        } catch (_error) {
+          // Language selection still works for the current page even without storage.
+        }
+      };
+
+      const setLanguage = (lang) => {
+        const selectedLang = Object.prototype.hasOwnProperty.call(translations, lang) ? lang : "pt";
+        const copy = translations[selectedLang];
+
+        document.documentElement.lang = copy.documentLang;
+        document.title = copy.pageTitle;
+        document.querySelector(".language-selector")?.setAttribute("aria-label", copy.languageSelectorLabel);
+
+        document.querySelectorAll("[data-i18n]").forEach((element) => {
+          const value = copy[element.dataset.i18n];
+
+          if (typeof value === "undefined") {
+            return;
+          }
+
+          if (element.dataset.i18nAttr) {
+            element.setAttribute(element.dataset.i18nAttr, value);
+            return;
+          }
+
+          element.innerHTML = value;
+        });
+
+        buttons.forEach((button) => {
+          const isActive = button.dataset.langButton === selectedLang;
+          button.classList.toggle("is-active", isActive);
+          button.setAttribute("aria-pressed", String(isActive));
+        });
+
+        saveLanguage(selectedLang);
+      };
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => setLanguage(button.dataset.langButton));
+      });
+
+      setLanguage(getInitialLanguage());
+    })();
+  </script>
 </body>
 
 </html>

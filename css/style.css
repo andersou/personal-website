@@ -1,3 +1,40 @@
+.language-selector {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+  display: inline-flex;
+  gap: 0.15rem;
+  padding: 0.2rem;
+  border: 1px solid rgba(180, 155, 87, 0.35);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 0.2rem 0.65rem rgba(0, 0, 0, 0.16);
+}
+
+.language-option {
+  min-width: 2.5rem;
+  min-height: 2rem;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: #555;
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.language-option:focus-visible {
+  outline: 2px solid #b49b57;
+  outline-offset: 2px;
+}
+
+.language-option.is-active {
+  background: #b49b57;
+  color: #fff;
+}
+
 .foto-ander {
   width: 200px;
 
@@ -428,4 +465,17 @@ html {
 p {
   text-align: justify;
   text-justify: inter-word;
+}
+
+@media screen and (max-width: 700px) {
+  .language-selector {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+}
+
+@media print {
+  .language-selector {
+    display: none !important;
+  }
 }
